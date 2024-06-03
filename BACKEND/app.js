@@ -4,9 +4,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
 
 app.use(cors());
-const url = `mongodb+srv://subhusharmaic:lLSUmpuRJGez5VuI@blog.pv9jhn9.mongodb.net/MERN?retryWrites=true&w=majority&appName=Blog`;
+const url = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@blog.pv9jhn9.mongodb.net/MERN?retryWrites=true&w=majority&appName=Blog`;
 
 const placesRoutes = require("./routes/places-routes");
 const usersRoutes = require("./routes/users-routes");
