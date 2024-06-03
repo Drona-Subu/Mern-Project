@@ -1,9 +1,48 @@
+# Location Image Uploader
 
-# Project Title
+The Location Image Uploader is a full-stack web application that enables users to upload images related to specific locations. It's built using the MERN (MongoDB, Express.js, React, Node.js) stack. Here are the key features and technologies used:
 
-The Location Image Uploader is a web application that allows users to upload images associated with specific locations made using MERN Full stack.
-Used JWT for Authentication and Authorization and bcrypt for password hashing.
-Used multer for saving the image file on disk storage.
+## Features
+
+1. **Image Upload**: Users can upload images associated with specific locations.
+2. **Authentication and Authorization**: JWT (JSON Web Tokens) are used for user authentication and authorization.
+3. **Password Hashing**: User passwords are securely hashed using bcrypt.
+4. **File Storage**: Multer is utilized for saving image files to disk storage.
+
+## Technologies Used
+
+- **Frontend**:
+  - React: Building the user interface.
+  - HTML, CSS, and JavaScript: Creating the frontend components.
+- **Backend**:
+  - Node.js: Handling server-side logic.
+  - Express.js: Building the RESTful API.
+  - MongoDB: Storing user data and image metadata.
+- **Authentication**:
+  - JWT (JSON Web Tokens): Securely managing user sessions.
+  - Bcrypt: Hashing user passwords.
+- **File Handling**:
+  - Multer: Managing image file uploads.
+
+## Getting Started
+
+1. Clone this repository to your local machine: git clone https://github.com/Drona-Subu/Mern-Project.git
+  
+2. Install dependencies using `npm install`.
+
+3. Set up your MongoDB database and configure the connection in `app.js`.
+
+4. Create a `.env` file with the following variables:
+   - `DB_USERNAME`: Your MongoDB connection string.
+   - `DB_PASSWORD`: Secret key for JWT token generation.
+
+5. Run the server:
+   cd Backend
+   node app.js
+
+7. Run the client app(React):
+   cd my-react-app
+   npm run dev
 
 
 ## Demo
