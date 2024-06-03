@@ -1,7 +1,9 @@
 
 # Project Title
 
-The Location Image Uploader is a web application that allows users to upload images associated with specific locations.
+The Location Image Uploader is a web application that allows users to upload images associated with specific locations made using MERN Full stack.
+Used JWT for Authentication and Authorization and bcrypt for password hashing.
+Used multer for saving the image file on disk storage.
 
 
 ## Demo
